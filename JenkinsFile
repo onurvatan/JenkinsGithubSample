@@ -3,6 +3,8 @@ pipeline {
   stages {
     stage('Build and Run') {
       steps {
+        echo 'Build!'
+        sh 'docker-compose --version'
         sh 'docker-compose build'
         sh 'docker-compose up -d'
       }
