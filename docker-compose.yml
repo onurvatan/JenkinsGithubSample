@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  jenkinsgithubsample:
+    image: ${DOCKER_REGISTRY-}jenkinsgithubsample
+    build:
+      context: .
+      dockerfile: JenkinsGithubSample/Dockerfile
